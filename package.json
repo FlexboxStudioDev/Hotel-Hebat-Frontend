@@ -2,13 +2,15 @@
 	"name": "hotel-hebat-frontend",
 	"version": "0.0.0",
 	"scripts": {
-		"dev": "vite",
+		"vue": "vite",
 		"build": "vite build",
 		"preview": "vite preview --port 4173",
 		"test": "jest",
-		"start": "node index.js"
+		"start": "node index.js",
+		"tw": "npx tailwindcss -i ./src/css/input.css -o ./src/css/style.css --watch"
 	},
 	"dependencies": {
+		"@headlessui/vue": "^1.6.6",
 		"vue": "^3.2.37",
 		"vue-router": "^4.0.16"
 	},
