@@ -12,7 +12,7 @@
 		<header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 scroll-smooth">
 			<div class="container py-5 px-4 md:px-20 md:py-0">
 				<nav class="bg-white border-gray-200 px-2 sm:px-4 py-2 md:py-6 rounded dark:bg-gray-800">
-					<div class="container flex flex-wrap justify-between items-center mx-auto">
+					<div class="flex flex-wrap justify-between items-center mx-auto">
 						<a href="index.html" class="flex items-center">
 							<span class="self-center text-xl font-semibold whitespace-nowrap text-tema">Hotel Hebat</span>
 						</a>
@@ -42,45 +42,20 @@
 							</div>
 						</div>
 
-						<div class="flex items-center px-4 lg:hidden">
-							<button id="hamburger" name="hamburger" type="button" class="block absolute right-5 md:hidden">
-								<span class="hamburger-line origin-top-left"></span>
-								<span class="hamburger-line origin-left"></span>
-								<span class="hamburger-line origin-bottom-left"></span>
-							</button>
-
-							<div id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block md:static md:bg-transparent md:max-w-full md:shadow-none md:rounded-none">
-								<ul class="block md:flex">
-									<li class="group flex md:mx-4">
-										<a href="index.html" class="text-base ml-10 py-2 text-tema"
-											>Home
-											<span class="block max-w-full transition-all duration-500 h-0.5 bg-tema"></span>
-										</a>
-									</li>
-									<li class="group flex md:mx-4">
-										<a href="room.html" class="text-base text-dark ml-10 py-2 group-hover:text-tema"
-											>About
-											<span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-tema"></span>
-										</a>
-									</li>
-									<li class="group flex md:mx-4">
-										<a href="facility.html" class="text-base text-dark ml-10 py-2 group-hover:text-tema"
-											>Facility
-											<span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-tema"></span>
-										</a>
-									</li>
-									<div class="mx-4 flex-grow border-t border-gray-300" style="margin-top: 9px"></div>
-									<li class="group flex md:mx-4">
-										<a href="login.html" class="text-base text-dark ml-10 py-4 group-hover:text-tema"
-											>Sign Up
-											<span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-tema"></span>
-										</a>
-									</li>
-									<li class="group flex md:mx-4">
-										<a href="login.html" type="button" class="text-tema ml-7 hover:text-white border border-tema hover:bg-tema font-medium rounded-lg text-base px-3 py-1.5 text-center transition ease-in-out duration-300">Sign In</a>
-									</li>
-								</ul>
-							</div>
+						<div class="dropdown dropdown-end md:hidden">
+							<label tabindex="0" class="btn m-1 bg-transparent border-transparent hover:bg-transparent hover:border-transparent text-tema">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+								</svg>
+							</label>
+							<ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+								<li><a href="index.html" class="mx-2 bg-transparent">Home</a></li>
+								<li><a href="room.html" class="mx-2 bg-transparent">Room</a></li>
+								<li><a href="facility.html" class="mx-2 bg-transparent">Facilities</a></li>
+								<div class="divider m-0 ml-4 mr-2 p-0"></div>
+								<li><a href="register.html" class="mx-2 bg-transparent">Sign Up</a></li>
+								<li><a href="login.html" class="bg-tema text-white m-2">Sign In</a></li>
+							</ul>
 						</div>
 					</div>
 				</nav>
@@ -101,84 +76,54 @@
 						</div>
 						<img src="./assets/kamar-1.png" alt="" class="hidden h-full md:hidden 2xl:flex md:w-full md:mr-auto lg:scale-90 md:rounded-3xl md:py-2" />
 					</div>
-					<div class="relative hidden lg:block justify-center m-auto -top-16 group">
-						<div class="bg-tema absolute rounded-full inset-0 blur-sm opacity-75 group-hover:blur-md transition duration-200"></div>
+					<div class="relative hidden lg:flex justify-center m-auto -top-16 p-8 group">
+						<div class="bg-tema absolute rounded-full inset-8 blur-sm opacity-75 group-hover:blur-md transition duration-200"></div>
 						<div class="bg-white flex relative p-4 rounded-full leading-none divide-x divide-tema items-center">
-							<span class="px-12 py-4 text-base self-center font-thin"
-								>Check In
-								<div class="text-base flex font-thin py-1 border-b border-gray-400 text-gray-400">
-									DD/MM/YYYY
-									<button class="mx-1">
-										<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="orange" stroke-width="2">
-											<path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-										</svg>
-									</button>
-								</div>
-							</span>
-							<span class="px-12 py-4 text-base self-center font-thin"
-								>Check Out
-								<div class="text-base flex font-thin py-1 border-b border-gray-400 text-gray-400">
-									DD/MM/YYYY
-									<button class="mx-1">
-										<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="orange" stroke-width="2">
-											<path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-										</svg>
-									</button>
-								</div>
-							</span>
-							<span class="px-12 py-4 text-base self-center font-thin"
-								>Jumlah Kamar
-								<div class="text-base flex font-thin py-1 border-b border-gray-400 text-gray-400">
-									1 Kamar | 2 Orang
-									<button class="mx-1">
-										<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="orange" stroke-width="2">
-											<path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-										</svg>
-									</button>
-								</div>
-							</span>
-							<button class="bg-tema rounded-full text-white text-lg mr-8 py-2 px-8">Pesan</button>
+							<div class="form-control w-full py-2 px-8">
+								<label class="label">
+									<span class="label-text">Check In</span>
+								</label>
+								<input type="text" placeholder="MM | DD | YYY" class="input input-bordered w-full max-w-xs border-none" />
+							</div>
+							<div class="form-control w-full py-2 px-8">
+								<label class="label">
+									<span class="label-text">Check Out</span>
+								</label>
+								<input type="text" placeholder="MM | DD | YYY" class="input input-bordered w-full max-w-xs border-none" />
+							</div>
+							<div class="form-control w-full py-2 px-8">
+								<label class="label">
+									<span class="label-text">Jumlah Kamar</span>
+								</label>
+								<input type="text" placeholder="1 Kamar | 2 Orang" class="input input-bordered w-full max-w-xs border-none" />
+							</div>
+							<button class="bg-tema rounded-full text-white text-lg mx-4 py-2 px-8 hover:shadow-lg transition duration-200 ease">Pesan</button>
 						</div>
 					</div>
-					<div class="relative flex lg:hidden justify-center m-auto container top-4">
+					<div class="relative flex lg:hidden justify-center container m-auto top-4">
 						<div class="bg-tema absolute mx-4 rounded-lg inset-0 blur-sm opacity-75"></div>
-						<div class="bg-white relative mx-4 p-6 container rounded-lg">
+						<div class="bg-white relative container justify-center m-auto mx-4 p-6 rounded-lg">
 							<div class="divide-y flex flex-col divide-tema">
-								<span class="text-base font-thin pb-4"
-									>Check In
-									<div class="text-base flex font-thin pt-2 pb-1 text-gray-400">
-										DD/MM/YYYY
-										<button class="mx-1">
-											<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="orange" stroke-width="2">
-												<path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-											</svg>
-										</button>
-									</div>
-								</span>
-								<span class="text-base font-thin py-4"
-									>Check Out
-									<div class="text-base flex font-thin pt-2 pb-1 text-gray-400">
-										DD/MM/YYYY
-										<button class="mx-1">
-											<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="orange" stroke-width="2">
-												<path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-											</svg>
-										</button>
-									</div>
-								</span>
-								<span class="py-4 text-base flex flex-col font-thin"
-									>Jumlah Kamar
-									<div class="text-base flex font-thin py-1 text-gray-400">
-										1 Kamar | 2 Orang
-										<button class="mx-1">
-											<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="orange" stroke-width="2">
-												<path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-											</svg>
-										</button>
-									</div>
-								</span>
-								<span class="py-4">
-									<button class="bg-tema self-end m-auto rounded-full text-white text-lg mr-8 py-2 px-8 container">Pesan</button>
+								<div class="form-control w-full my-2">
+									<label class="label">
+										<span class="label-text">Check In</span>
+									</label>
+									<input type="date" placeholder="MM | DD | YYY" class="input input-bordered w-full max-w-xs border-none my-1" />
+								</div>
+								<div class="form-control w-full my-2 pt-2">
+									<label class="label">
+										<span class="label-text">Check Out</span>
+									</label>
+									<input type="date" placeholder="MM | DD | YYY" class="input input-bordered w-full max-w-xs border-none my-1" />
+								</div>
+								<div class="form-control w-full my-2 pt-2">
+									<label class="label">
+										<span class="label-text">Jumlah Kamar</span>
+									</label>
+									<input type="text" placeholder="1 Kamar | 2 Orang" class="input input-bordered w-full max-w-xs border-none my-1" />
+								</div>
+								<span class="py-4 w-full">
+									<button class="bg-tema self-center m-auto rounded-full text-white text-lg py-2 px-24 flex">Pesan</button>
 								</span>
 							</div>
 						</div>
