@@ -10,7 +10,7 @@
 	<body>
 		<!-- Navbar Start -->
 		<header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 scroll-smooth">
-			<div class="container py-5 px-4 md:px-20 md:py-0">
+			<div class="container py-3 px-4 md:px-20 md:py-2">
 				<nav class="bg-white border-gray-200 px-2 sm:px-4 py-2 md:py-6 rounded dark:bg-gray-800">
 					<div class="flex flex-wrap justify-between items-center mx-auto">
 						<a href="index.html" class="flex items-center">
@@ -76,20 +76,20 @@
 						</div>
 						<img src="./assets/kamar-1.png" alt="" class="hidden h-full md:hidden 2xl:flex md:w-full md:mr-auto lg:scale-90 md:rounded-3xl md:py-2" />
 					</div>
-					<div class="relative hidden lg:flex justify-center m-auto -top-16 p-8 group">
+					<div class="relative hidden lg:flex justify-center m-auto -mt-24 p-8 group">
 						<div class="bg-tema absolute rounded-full inset-8 blur-sm opacity-75 group-hover:blur-md transition duration-200"></div>
 						<div class="bg-white flex relative p-4 rounded-full leading-none divide-x divide-tema items-center">
 							<div class="form-control w-full py-2 px-8">
 								<label class="label">
 									<span class="label-text">Check In</span>
 								</label>
-								<input type="text" placeholder="MM | DD | YYY" class="input input-bordered w-full max-w-xs border-none" />
+								<input type="date" placeholder="MM | DD | YYY" class="input input-bordered w-full max-w-xs border-none" />
 							</div>
 							<div class="form-control w-full py-2 px-8">
 								<label class="label">
 									<span class="label-text">Check Out</span>
 								</label>
-								<input type="text" placeholder="MM | DD | YYY" class="input input-bordered w-full max-w-xs border-none" />
+								<input type="date" placeholder="MM | DD | YYY" class="input input-bordered w-full max-w-xs border-none" />
 							</div>
 							<div class="form-control w-full py-2 px-8">
 								<label class="label">
@@ -134,8 +134,49 @@
 		<!-- Hero Section End -->
 
 		<!-- Tentang Kami Section Start -->
+		<section class="pt-24 lg:pt-8">
+			<div class="md:container">
+				<div class="flex flex-wrap m-auto">
+					<div class="justify-center m-auto md:hidden">
+						<h1 class="text-2xl md:text-4xl font-medium text-tema text-center md:top-8">Tentang Kami</h1>
+						<div class="pt-8 justify-center m-auto container">
+							<img src="./assets/ellipse.png" alt="" class="flex m-auto scale-75" />
+							<p class="text-base text-black font-extralight flex text-center m-8">Dikelilingi oleh keindahan pegunungan yang indah, danau, dan sawah menghijau</p>
+						</div>
+						<div class="pt-8 justify-center m-auto container">
+							<img src="./assets/ellipse.png" alt="" class="flex m-auto scale-75" />
+							<p class="text-base text-black font-extralight flex text-center m-8">Kids Club yang luas menawarkan beragam fasilitas dan kegiatan anak-anak yang akan melengkapi kenyamanan keluarga</p>
+						</div>
+						<div class="pt-8 justify-center m-auto container">
+							<img src="./assets/ellipse.png" alt="" class="flex m-auto scale-75" />
+							<p class="text-base text-black font-extralight flex text-center m-8">Dilengkapi pelayanan lengkap dengan ruang konvensi terbesar di Bandung, mampu mengkomodisi hingga 3.000 delegasi</p>
+						</div>
+					</div>
+					<div class="hidden md:flex flex-col">
+						<h1 class="text-4xl font-medium text-tema mt-12 pt-8 mb-8 text-center" style="margin-right: 10px">Tentang Kami</h1>
+						<div class="container grid grid-flow-row">
+							<div class="flex md:mx-28">
+								<div class="pt-8 container group">
+									<img src="./assets/ellipse.png" alt="" class="flex m-auto scale-90 group-hover:scale-100 transition duration-200 ease" />
+									<p class="text-base text-black font-extralight flex text-center ml-8 m-8">Dikelilingi oleh keindahan pegunungan yang indah, danau, dan sawah menghijau</p>
+								</div>
+								<div class="pt-8 container group">
+									<img src="./assets/ellipse.png" alt="" class="flex m-auto scale-90 group-hover:scale-100 transition duration-200 ease" />
+									<p class="text-base text-black font-extralight flex text-center m-8">Kids Club yang luas menawarkan beragam fasilitas dan kegiatan anak-anak yang akan melengkapi kenyamanan keluarga</p>
+								</div>
+								<div class="pt-8 container group">
+									<img src="./assets/ellipse.png" alt="" class="flex m-auto scale-90 group-hover:scale-100 transition duration-200 ease" />
+									<p class="text-base text-black font-extralight flex text-center m-8">Dilengkapi pelayanan lengkap dengan ruang konvensi terbesar di Bandung, mampu mengkomodisi hingga 3.000 delegasi</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- Tentang Kami Section End -->
 
 		<script src="js/script.js"></script>
+		<script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
 	</body>
 </html>
