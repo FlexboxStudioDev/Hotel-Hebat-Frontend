@@ -5,6 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/owl.carousel.min.css" />
+		<link rel="stylesheet" href="css/owl.theme.default.min.css" />
 		<title>Hotel Hebat Bandung</title>
 	</head>
 	<body>
@@ -67,7 +69,7 @@
 		<!-- Navbar End -->
 
 		<!-- Carousel Start  -->
-		<section class="pt-24 md:pt-24">
+		<!-- <section class="pt-24 md:pt-24">
 			<div class="md:container">
 				<div class="flex flex-wrap m-auto">
 					<div class="flex-col flex justify-center m-auto">
@@ -101,11 +103,78 @@
 					</div>
 				</div>
 			</div>
+		</section> -->
+		<section id="slider" class="pt-5">
+			<div class="container">
+				<h1 class="text-center"><b>Responsive Owl Carousel</b></h1>
+				<div class="slider">
+					<div class="owl-carousel">
+						<div class="slider-card">
+							<div class="flex justify-center items-center mb-4">
+								<img src="assets/kamar-depan.png" alt="" />
+							</div>
+							<h5 class="mb-0 text-center"><b>HTML CSS3 Tutorials</b></h5>
+							<p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+						</div>
+						<div class="slider-card">
+							<div class="flex justify-center items-center mb-4">
+								<img src="assets/kamar-depan.png" alt="" />
+							</div>
+							<h5 class="mb-0 text-center"><b>Wordpress Tutorials</b></h5>
+							<p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+						</div>
+						<div class="slider-card">
+							<div class="flex justify-center items-center mb-4">
+								<img src="assets/kamar-depan.png" alt="" />
+							</div>
+							<h5 class="mb-0 text-center"><b>PHP MySQL Tutorials</b></h5>
+							<p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+						</div>
+						<div class="slider-card">
+							<div class="flex justify-center items-center mb-4">
+								<img src="assets/kamar-depan.png" alt="" />
+							</div>
+							<h5 class="mb-0 text-center"><b>Javascript Tutorials</b></h5>
+							<p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+						</div>
+						<div class="slider-card">
+							<div class="flex justify-center items-center mb-4">
+								<img src="assets/kamar-depan.png" alt="" />
+							</div>
+							<h5 class="mb-0 text-center"><b>Bootstrap Tutorials</b></h5>
+							<p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
-
 		<!-- Carousel End  -->
 
+		<script src="js/jquery.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/script.js"></script>
-		<script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+		<script>
+			$(".owl-carousel").owlCarousel({
+				loop: true,
+				margin: 10,
+				nav: true,
+				autoplay: true,
+				autoplayTimeout: 3000,
+				autoplayHoverPause: true,
+				center: true,
+				navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+				responsive: {
+					0: {
+						items: 1,
+					},
+					600: {
+						items: 1,
+					},
+					1000: {
+						items: 3,
+					},
+				},
+			});
+		</script>
 	</body>
 </html>
